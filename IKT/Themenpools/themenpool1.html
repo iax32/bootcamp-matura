@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>IKT - Themenpool 1: Mathematische Informationsverarbeitung</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Themenpool 1: Mathematische Informatiosnverarbeitung</h2>
+        <div>
+            
+            <h2>A - Algorithmen und Daten</h3>
+            <h3>Datentypen</h3>
+            <p>Die größe der Datentypen hängt com Compiler, von der Systemarchitektur und von der Programmiersprache ab. In der Tabelle sind die üblichen Datentypgrößen angegeben
+            <br>
+            <br>
+            <q>Die Wertebereiche werden natürlich nicht abgefragt, da sie wie du richtig sagst in beinahe allen Sprachen unterschiedlich sind.</q>  - Herr Marik
+            </p>
+            
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Größe / Wertebereich</th>
+                    <th>Typ</th>
+                    <th>Beispiel</th>
+                </tr>
+
+                <tr>
+                    <td>Byte</td>
+                    <td>8 Bits/ 1 Byte</td>
+                    <td>Ganze Zahl</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Short</td>
+                    <td>16 Bits / 2 Bytes</td>
+                    <td>Ganze Zahl</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Integer</td>
+                    <td>32 Bits / 4 Bytes</td>
+                    <td>Gnaze Zahl</td>
+                    <td>1000</td>
+                </tr>
+
+                <tr>
+                    <td>Long</td>
+                    <td>64 Bits/ 4 Bytes</td>
+                    <td>Gnaze Zahl</td>
+                    <td>10000</td>
+                </tr>
+
+                <tr>
+                    <td>Float</td>
+                    <td>32 Bits / 4 Bytes</td>
+                    <td>Dezimalzahl</td>
+                    <td>1000.10</td>
+                </tr>
+
+                <tr>
+                    <td>Double</td>
+                    <td>64 Bits / 8 Bytes</td>
+                    <td>Dezimalzahl</td>
+                    <td>10000.100</td>
+                </tr>
+
+                <tr>
+                    <td>Boolean</td>
+                    <td>1 Bit</td>
+                    <td>Boolescher Wert</td>
+                    <td>1 - True, 0 - False</td>
+                </tr>
+
+                <tr>
+                    <td>Char</td>
+                    <td>16 Bits / 2 Bytes | 8 Bits / 1 Byte</td>
+                    <td>Unicode Zeichen oder ASCII Zeichen</td>
+                    <td>A</td>
+                </tr>
+
+                <tr>
+                    <td>String</td>
+                    <td>16 Bit / 2 Bytes oder 8 Bits / 1 Byte pro Zeichen</td>
+                    <td>Sequenz von Unicode Zeichen</td>
+                    <td>Hello World</td>
+                </tr>
+
+            </table>
+
+            <h3>Arrays und Listen</h3>
+            <p>Eine Liste in Python ist eine Sammlung von Variablen mit dem selben oder unterscheidlichem Datentyp. Die Länge kann verändert werden.</p>
+            <p>Syntax: <br><code>myList = [1,2]</code></p>
+
+            <h3>Tuples</h3>
+            <p>Tuples sind ähnlich zu Listen, wobei deren Inhalt nicht verändert werden kann. Statt Eckige Klammerm [] werden Geschwungene Klammern () verwendet</p>
+            <p>Syntax: <br><code>myTuple = (1,2)</code></p>
+
+            <h4>Dictonaries</h4>
+            <p>Dictonaries sind ähnlich zu Listen, aber die Reihenfolge vom Inhalt ist immer zufällig - also nicht geordnet - und haben immer verbundene 'keys' und 'values'.</p>
+            <p>Syntax: <br><code>mydict = {key1: value1, key2: value2} </code></p>
+
+            <h3>Kontrollstrukturen (flow-control)</h3>
+            <p>In python gibt es unterscheidliche Kontrollstrukturen, die in Algorithmen genutz werden, hier sind die wichtigsten:</p>
+
+            <h4>If-Befehl/Statement</h4>
+            <p>Der Inhalt eines if befehls wird nur dann ausgeführt wenn ein boolischer Wert wahr ist (Bedingung). <br>
+            Es kann mit einem elif verbunden werden, deren Inhalt nur dann ausgeführt wird, wenn die vorherige Bedingung vom if Befehl nicht übereinstimmt. <br>
+            Anschließend kann ein else genutz werden, wenn alle vorherigen Bedingungen nicht übereinstimmen</p>
+            <p>Syntax:</p>
+            <pre><code>
+            testWert = 1
+            if testWert == 1:
+                print("1")
+            elif testWert == 2:
+                print("2")
+            else:
+                print("nicht 1 oder 2")
+            </code></pre>
+
+            <h4>While Loop/Schleife</h4>
+            <p>Der Inhalt einer While-Schleife wird so lange ausgeführt, bis der boolesche Wert (Bedingung) neben dem while befehl nicht mehr wahr ist.</p>
+            <p>Syntax:</p>
+            <pre><code>
+            testWert = 1
+            while testWert == 1:
+                print("1")
+            </code></pre>
+
+            <h4>For Loop/ Schleife</h4>
+            <p>Die For Schleife hat eine gewisse Anzahl and Durchläufen. Die Anazhl and Durchläufen hängt von der Bedingung ab.</p>
+            <pre><code>
+            min = 1
+            max = 10
+            for i in range(1,10):
+                print(i)
+            </code></pre>
+            <p>Ausgabe in der Konsole ( es beginnt von 1 und endet um eine zahl vor 10 - also n-1):</p>
+            <pre>
+            1
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+            9
+            </pre>
+
+
+            <h4>Break, Continue und Else im Kontext von Schleifen</h4>
+            <p><strong>Break</strong> bricht eine Schleife sofort unabhängig vom booleschen Wert in der Schleife ab</p>
+            <p>Syntax:</p>
+            <pre><code>
+            for i in range(1,10):
+                if i == 5:
+                    break
+                print(i)
+            </code></pre>
+            <p>Ausgabe:</p>
+            <pre>
+            1
+            2
+            3
+            4</pre>
+            <p>Die Schleife bricht hier bei 4 ab, weil wenn i gleich 5 ist soll er die Schleife komplett abbrechen</p>
+
+            <p><strong>Continue</strong> überspringt den aktuellen Durchlauf der Schleife, aber es bricht die Schleife nicht komplett ab.</p>
+            <p>Syntax:</p>
+            <pre><code>
+            for i in range(1,10):
+                if i == 5:
+                    continue
+                print(i)
+            </code></pre>
+            <p>Ausgabe:</p>
+            <pre>
+            1
+            2
+            3
+            4
+            6
+            7
+            8
+            9</pre>
+            <p>Wir sehen es überspringt hier den Wert 5, weil wenn i gleich 5 ist soll er den aktuellen durchlauf überspringen, <br>
+            also er führt den restlichen Inhalt der For Schleife nicht aus, weil er nach dem if befehl den Durchlauf überspringt </p>
+
+            <p><strong>Else</strong> wird ausgeführt, wenn die Schleife nicht durch ein Break-Statement aufgehört hat ( Ähnlich wie bei try - catch - else )</p>
+            <p>Syntax:</p>
+            <code>else</code>
+
+            <h4>Pass</h4>
+            <p><strong>Pass</strong> hat keine Wirkung, macht jedoch leere Klasse und Funktionen möglich. Kann gut als Platzhalter eingesetzt werden.</p>
+            <p>Syntax:</p>
+            <pre><code>
+            def foo():
+                pass
+        
+            # oder:
+
+            class fuzz:
+                pass
+            </code></pre>
+
+
+            <h4>Match</h4>
+            <p>Match überprüft eine Variable und führt je nach Bedingung der Variable einen unterschiedlichen Block Code aus.</p>
+            <p>Syntax:</p>
+            <pre><code>
+            testWert = 1
+            match testWert:
+                case 1:
+                    print("1")
+                case 2:
+                    print("2")
+                case _:
+                    print("nicht 1 oder 2")
+            </code></pre>
+            <p>Ausgabe:</p>
+            <pre>1</pre>
+
+            <h3>Operatoren</h3>
+            <p>In Python gibt es verschiedene Arten von Operatoren, die je nach Zweck genutz werden können.</p>
+
+            <h4>Arithmetische Operatoren</h4>
+            <p>Arithemtische Operatoren in Python werden mit numerischen Werten genutzt um  mathematischen Operationen durchzuführen</p>
+            
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Funktion</th>
+                    <th>Beispiel</th>
+                </tr>
+
+                <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td>z = x + y</td>
+                </tr>
+
+                <tr>
+                    <td>-</td>
+                    <td>Subtraktion</td>
+                    <td>z = x - y</td>
+                </tr>
+
+                <tr>
+                    <td>*</td>
+                    <td>Multiplikation</td>
+                    <td>z = x + y</td>
+                </tr>
+
+                <tr>
+                    <td>/</td>
+                    <td>Division</td>
+                    <td>z = x / y</td>
+                </tr>
+
+                <tr>
+                    <td>%</td>
+                    <td>Modolo - Gibt den Rest einer Division zurück</td>
+                    <td>z = x % y</td>
+                </tr>
+
+
+                <tr>
+                    <td>//</td>
+                    <td>Bodenteilung</td>
+                    <td>z = x // y</td>
+                </tr>
+
+                <tr>
+                    <td>**</td>
+                    <td>Exponenten-Rechnung</td>
+                    <td>z = x ** y</td>
+                </tr>
+                
+            </table>
+
+            <h4>Bitweise Operatoren</h4>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Name</th>
+                    <th>Beschreibung</th>
+                    <th>Beispiel</th>
+                </tr>
+
+                <tr>
+                    <td>&</td>
+                    <td>AND</td>
+                    <td>Setzt beide Bits auf 1, wenn beide Bits 1 sind</td>
+                    <td>z = x & y</td>
+                </tr>
+
+                <tr>
+                    <td>|</td>
+                    <td>OR</td>
+                    <td>Setzt beide Bits auf 1, wenn mindestens 1 Bit 1 ist</td>
+                    <td>z = x | y</td>
+                </tr>
+
+                <tr>
+                    <td>^</td>
+                    <td>XOR</td>
+                    <td>Setzt beide Bits auf 1, wenn <strong>nur</strong> ein Bit 1 ist</td>
+                    <td>z = x ^ y</td>
+                </tr>
+
+                <tr>
+                    <td>~</td>
+                    <td>NOT</td>
+                    <td>Invertiert alle Bits</td>
+                    <td>x = ~y</td>
+                </tr>
+            </table>
+
+            <h4>Zuweisungsoperatoren</h4>
+            <p>Zuweisungsoperatoren werden genutzt, um Variablen Werte zuzuweisen wie folgt:</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Beispiel</th>
+                    <th>Gleich wie</th>
+                </tr>
+
+                <tr>
+                    <td>=</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                </tr>
+
+                <tr>
+                    <td>+=</td>
+                    <td>x += y</td>
+                    <td>x = x + y</td>
+                </tr>
+
+                <tr>
+                    <td>-=</td>
+                    <td>x -= y</td>
+                    <td>x = x - y</td>
+                </tr>
+
+                <tr>
+                    <td>*=</td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                </tr>
+
+                <tr>
+                    <td>/=</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                </tr>
+
+                <tr>
+                    <td>%=</td>
+                    <td>x %= y</td>
+                    <td>x = x % y</td>
+                </tr>
+
+                <tr>
+                    <td>//=</td>
+                    <td>x //= y</td>
+                    <td>x = x // y</td>
+                </tr>
+                
+                <tr>
+                    <td>**=</td>
+                    <td>x **= y</td>
+                    <td>x = x ** y</td>
+                </tr>
+                
+                <tr>
+                    <td>&=</td>
+                    <td>x &= y</td>
+                    <td>x = x & y</td>
+                </tr>
+
+                 <tr>
+                    <td>|=</td>
+                    <td>x |= y</td>
+                    <td>x = x | y</td>
+                </tr>
+
+                 <tr>
+                    <td>^=</td>
+                    <td>x ^= y</td>
+                    <td>x = x ^ y</td>
+                </tr>
+
+                 <tr>
+                    <td>>>=</td>
+                    <td>x >>= y</td>
+                    <td>x = x >> y</td>
+                </tr>
+                
+                
+                 <tr>
+                    <td><<=</td>
+                    <td>x <<= y</td>
+                    <td>x = x << y</td>
+                </tr>
+
+                
+            </table>
+
+
+            
+
+        </div>
+        
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
