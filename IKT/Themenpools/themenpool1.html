@@ -122,54 +122,54 @@
             Anschließend kann ein else genutz werden, wenn alle vorherigen Bedingungen nicht übereinstimmen</p>
             <p>Syntax:</p>
             <pre><code>
-            testWert = 1
-            if testWert == 1:
-                print("1")
-            elif testWert == 2:
-                print("2")
-            else:
-                print("nicht 1 oder 2")
+testWert = 1
+if testWert == 1:
+    print("1")
+elif testWert == 2:
+    print("2")
+else:
+    print("nicht 1 oder 2")
             </code></pre>
 
             <h4>While Loop/Schleife</h4>
             <p>Der Inhalt einer While-Schleife wird so lange ausgeführt, bis der boolesche Wert (Bedingung) neben dem while befehl nicht mehr wahr ist.</p>
             <p>Syntax:</p>
             <pre><code>
-            testWert = 1
-            while testWert == 1:
-                print("1")
+testWert = 1
+while testWert == 1:
+    print("1")
             </code></pre>
 
             <h4>For Loop/ Schleife</h4>
             <p>Die For Schleife hat eine gewisse Anzahl and Durchläufen. Die Anazhl and Durchläufen hängt von der Bedingung ab.</p>
             <pre><code>
-            min = 1
-            max = 10
-            for i in range(1,10):
-                print(i)
+min = 1
+max = 10
+for i in range(1,10):
+    print(i)
             </code></pre>
             <p>Ausgabe in der Konsole ( es beginnt von 1 und endet um eine zahl vor 10 - also n-1):</p>
             <pre>
-            1
-            2
-            3
-            4
-            5
-            6
-            7
-            8
-            9
-            </pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre>
 
 
             <h4>Break, Continue und Else im Kontext von Schleifen</h4>
             <p><strong>Break</strong> bricht eine Schleife sofort unabhängig vom booleschen Wert in der Schleife ab</p>
             <p>Syntax:</p>
             <pre><code>
-            for i in range(1,10):
-                if i == 5:
-                    break
-                print(i)
+for i in range(1,10):
+    if i == 5:
+        break
+    print(i)
             </code></pre>
             <p>Ausgabe:</p>
             <pre>
@@ -182,21 +182,21 @@
             <p><strong>Continue</strong> überspringt den aktuellen Durchlauf der Schleife, aber es bricht die Schleife nicht komplett ab.</p>
             <p>Syntax:</p>
             <pre><code>
-            for i in range(1,10):
-                if i == 5:
-                    continue
-                print(i)
+for i in range(1,10):
+    if i == 5:
+        continue
+    print(i)
             </code></pre>
             <p>Ausgabe:</p>
             <pre>
-            1
-            2
-            3
-            4
-            6
-            7
-            8
-            9</pre>
+1
+2
+3
+4
+6
+7
+8
+9</pre>
             <p>Wir sehen es überspringt hier den Wert 5, weil wenn i gleich 5 ist soll er den aktuellen durchlauf überspringen, <br>
             also er führt den restlichen Inhalt der For Schleife nicht aus, weil er nach dem if befehl den Durchlauf überspringt </p>
 
@@ -208,13 +208,13 @@
             <p><strong>Pass</strong> hat keine Wirkung, macht jedoch leere Klasse und Funktionen möglich. Kann gut als Platzhalter eingesetzt werden.</p>
             <p>Syntax:</p>
             <pre><code>
-            def foo():
-                pass
+def foo():
+    pass
         
-            # oder:
+# oder:
 
-            class fuzz:
-                pass
+class fuzz:
+    pass
             </code></pre>
 
 
@@ -222,14 +222,14 @@
             <p>Match überprüft eine Variable und führt je nach Bedingung der Variable einen unterschiedlichen Block Code aus.</p>
             <p>Syntax:</p>
             <pre><code>
-            testWert = 1
-            match testWert:
-                case 1:
-                    print("1")
-                case 2:
-                    print("2")
-                case _:
-                    print("nicht 1 oder 2")
+testWert = 1
+match testWert:
+    case 1:
+        print("1")
+    case 2:
+        print("2")
+    case _:
+        print("nicht 1 oder 2")
             </code></pre>
             <p>Ausgabe:</p>
             <pre>1</pre>
@@ -506,57 +506,52 @@
 
             <h3>Kelvin zu Celcius Umwandlung</h3>
             <pre><code>
-            def k_to_c(k): 
-                return k - 273.15
+def k_to_c(k): 
+    return k - 273.15
             
-            def c_to_k(c):
-                return c + 273.15
+def c_to_k(c):
+    return c + 273.15
 
-            k = float(input("Kelvin eingeben: "))
-            print("Celsius:", k_to_c(k))
+k = float(input("Kelvin eingeben: "))
+print("Celsius:", k_to_c(k))
 
-            c = float(input("Celsius eingeben: "))
-            print("Kelvin:", c_to_k(c))
+c = float(input("Celsius eingeben: "))
+print("Kelvin:", c_to_k(c))
             </code></pre>
 
             <h3>Taschenrechner</h3>
             <pre><code>
-            def rechner(a, b, op):
-                if op == '+': return a + b
-                if op == '-': return a - b
-                if op == '*': return a * b
-                if op == '/': return a / b
-                return "Ungültiger Operator"
+def rechner(a, b, op):
+    if op == '+': return a + b
+    if op == '-': return a - b
+    if op == '*': return a * b
+    if op == '/': return a / b
+    return "Ungültiger Operator"
 
-            # Beispiel mit Eingabe:
-            a = float(input("Zahl 1: "))
-            op = input("Operator (+, -, *, /): ")
-            b = float(input("Zahl 2: "))
-            print("Ergebnis:", rechner(a, b, op))
-                
+# Beispiel mit Eingabe:
+a = float(input("Zahl 1: "))
+op = input("Operator (+, -, *, /): ")
+b = float(input("Zahl 2: "))
+print("Ergebnis:", rechner(a, b, op))
+
             </code></pre>
 
         </div>
 
-
-        
-
-        
-
         <div>
             <h2>B - Funktionen in der Informatik</h2>
             <h3>Funktionen</h3>
-            <p>Funktion oder Methoden, sind Blöcke and Code, welche mit einem simplem Keyword (Schlüsselwort) ausgeführt werden können. <br>
+            <p>Funktion oder Methoden, sind Blöcke an Code, welche mit einem simplen Keyword (Schlüsselwort) ausgeführt werden können. <br>
             Sie können Parameter/Argumente erhalten und Variablen/Objekte zurückgeben. Sie sind vor allem notwendig, wenn Code oft wiederverwendet wird und <br>
             sorgen nicht nur für bessere Organisation, sondern auch dafür, dass weniger Code kopiert werden muss, und damit für eine geringere größe an Scripts.
             </p>
             <p>Syntax:</p>
-            <pre><code>
-            def functionName(x, y):
-                z = x + y
-                return z
+<pre><code>
+def functionName(x, y):
+    z = x + y
+    return z
 
-            print(functionName(1,1))
+print(functionName(1,1))
             </code></pre>
             <p>Ausgabe:</p>
             <pre>
@@ -593,33 +588,42 @@
             </ol>
             
             <h3>Dezimal zu Binär</h3>
-            <pre><code>
-            def dezimal_zu_binaer(zahl):
-                if zahl == 0:
-                    return "0"
-                binaer = ""
-                while zahl > 0:
-                    binaer = str(zahl % 2) + binaer
-                    zahl //= 2
-                return binaer
+<pre><code>
+def dezimal_zu_binaer(zahl):
+    if zahl == 0:
+        return "0"
+    binaer = ""
+    while zahl > 0:
+        binaer = str(zahl % 2) + binaer
+        zahl //= 2
+        return binaer
 
-            # Beispiel:
-            dezimalzahl = int(input("Gib eine Dezimalzahl ein: "))
-            binaerzahl = dezimal_zu_binaer(dezimalzahl)
-            print(f"Die Binärdarstellung von {dezimalzahl} ist {binaerzahl}")
-
-            </code></pre>
+# Beispiel:
+dezimalzahl = int(input("Gib eine Dezimalzahl ein: "))
+binaerzahl = dezimal_zu_binaer(dezimalzahl)
+print(f"Die Binärdarstellung von {dezimalzahl} ist {binaerzahl}")
+</code></pre>
 
             <p>Oder mit Rekursion:</p>
             <pre><code>
-            def bin_rek(n):
-                return '0' if n == 0 else bin_rek(n // 2) + str(n % 2)
+def bin_rek(n):
+    return '0' if n == 0 else bin_rek(n // 2) + str(n % 2)
             </code></pre>
 
             <h3>Fakultät</h3>
             <pre><code>
-            def f(n): 
-                return 1 if n < 2 else n*f(n-1)
+def f(n): 
+    return 1 if n < 2 else n*f(n-1)
+            </code></pre>
+            <p>oder</p>
+            <pre><code>
+def fakultaet(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fakultaet(n - 1)
+
+print(fakultaet(5))  # Ausgabe: 120
             </code></pre>
         </div>
         
