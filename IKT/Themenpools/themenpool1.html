@@ -20,7 +20,6 @@
     <main>
         <h1>Themenpool 1: Mathematische Informatiosnverarbeitung</h2>
         <div>
-            
             <h2>A - Algorithmen und Daten</h3>
             <h3>Datentypen</h3>
             <p>Die größe der Datentypen hängt com Compiler, von der Systemarchitektur und von der Programmiersprache ab. In der Tabelle sind die üblichen Datentypgrößen angegeben
@@ -418,15 +417,211 @@
                     <td>x <<= y</td>
                     <td>x = x << y</td>
                 </tr>
-
                 
             </table>
 
 
+            <h4>Vergleichsoperatoren</h4>
+            <p>Vergleichsoperatoren werden genutzt um zwei Werte bzw. Variablen zu vergleichen</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Beschreibung</th>
+                </tr>
+
+                <tr>
+                    <td>==</td>
+                    <td>Gleich</td>
+                </tr>
+
+                <tr>
+                    <td>!=</td>
+                    <td>Ungleich</td>
+                </tr>
+
+                <tr>
+                    <td>></td>
+                    <td>Größer als</td>
+                </tr>
+
+                <tr>
+                    <td><</td>
+                    <td>Kleiner als</td>
+                </tr>
+
+                <tr>
+                    <td>>=</td>
+                    <td>Größer-Gleich</td>
+                </tr>
+
+                <tr>
+                    <td><=</td>
+                    <td>Kleiner-Gleich</td>
+                </tr>
+            </table>
+
+            <h4>Logische Operatoren</h4>
+            <p>Logische Operatoren werden genutz um zwei Bedingungen miteinander zu verbinden</p>
+
+
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Beschreibung</th>
+                    <th>Beispiel</th>
+                </tr>
+
+                <tr>
+                    <td>and</td>
+                    <td>Gibt wahr aus, wenn beide Seiten wahr sind</td>
+                    <td>x < 10 and x < 20</td>
+                </tr>
+
+                <tr>
+                    <td>or</td>
+                    <td>Gibt wahr aus, wenn eine Seite wahr ist</td>
+                    <td>x == 4 or x == 5</td>
+                </tr>
+
+                <tr>
+                    <td>not</td>
+                    <td>Gibt wahr aus, wenn das Statement falsch ist</td>
+                    <td>not(x == 4 and x == 5)</td>
+                </tr>
+            </table>
+
+            <h2>A - Praxis Beispiele</h2>
+            <p>Die Praxis beim Themenpool 1 A ist ein Python programm zu erstellen.</p>
+
+            <p>Es wird eine Formel angegeben sein und man muss anhand der Formel ein gewissen Python programm erstellen. <br>
+            Dazu gibt es noch ein Bild, wie ungefähr die Ausgabe aussehen sollte.
+            </p>
+
+            <p>Praxis Beispiele könnten sein:</p>
+            <ol>
+                
+                <li>1. Kelvin zu Celcius Umwandlung</li>
+                <li>2. Taschenrechner</li>
+            </ol>
+
+            <h3>Kelvin zu Celcius Umwandlung</h3>
+            <pre><code>
+            def k_to_c(k): 
+                return k - 273.15
             
+            def c_to_k(c):
+                return c + 273.15
+
+            k = float(input("Kelvin eingeben: "))
+            print("Celsius:", k_to_c(k))
+
+            c = float(input("Celsius eingeben: "))
+            print("Kelvin:", c_to_k(c))
+            </code></pre>
+
+            <h3>Taschenrechner</h3>
+            <pre><code>
+            def rechner(a, b, op):
+                if op == '+': return a + b
+                if op == '-': return a - b
+                if op == '*': return a * b
+                if op == '/': return a / b
+                return "Ungültiger Operator"
+
+            # Beispiel mit Eingabe:
+            a = float(input("Zahl 1: "))
+            op = input("Operator (+, -, *, /): ")
+            b = float(input("Zahl 2: "))
+            print("Ergebnis:", rechner(a, b, op))
+                
+            </code></pre>
 
         </div>
+
+
         
+
+        
+
+        <div>
+            <h2>B - Funktionen in der Informatik</h2>
+            <h3>Funktionen</h3>
+            <p>Funktion oder Methoden, sind Blöcke and Code, welche mit einem simplem Keyword (Schlüsselwort) ausgeführt werden können. <br>
+            Sie können Parameter/Argumente erhalten und Variablen/Objekte zurückgeben. Sie sind vor allem notwendig, wenn Code oft wiederverwendet wird und <br>
+            sorgen nicht nur für bessere Organisation, sondern auch dafür, dass weniger Code kopiert werden muss, und damit für eine geringere größe an Scripts.
+            </p>
+            <p>Syntax:</p>
+            <pre><code>
+            def functionName(x, y):
+                z = x + y
+                return z
+
+            print(functionName(1,1))
+            </code></pre>
+            <p>Ausgabe:</p>
+            <pre>
+            2
+            </pre>
+
+            <h3>Rekursion</h3>
+            <p>Als Rekursion wird bezeichet, wenn sich eine Funktion selbst aufruft. </p>
+            <p>Beispiel:</p>
+            <pre><code>
+            def foo():
+                foo()
+            </code></pre>
+            <p>Dies kann deutliche performance-Vorteile bringen, kann jedoch auch eine unendliche Schleife auslösen.</p>
+            <p>Weiters kann Rekursion dabei helfen, komplexe Konzepte auf kleine Teilbereiche aufzuteilen, um sie so einfacher zu verstehen zu machen</p>
+
+            <p><strong>Vorteile:</strong></p>
+            <ol>
+                <li>1. Perfomance</li>
+                <li>2. Einfacher zu verstehen</li>
+            </ol>
+
+            <p><strong>Nachteile</strong></p>
+            <ol>
+                <li>1. Kann eine unendlich Schleife auslösen</li>
+            </ol>
+
+
+            <h2>B - Praxis Beispiele</h2>
+            <p>Praxis Beispiele könnten sein:</p>
+            <ol>
+                <li>1. Dezimal zu Binär Umwandlung</li>
+                <li>2. Fakultät</li>
+            </ol>
+            
+            <h3>Dezimal zu Binär</h3>
+            <pre><code>
+            def dezimal_zu_binaer(zahl):
+                if zahl == 0:
+                    return "0"
+                binaer = ""
+                while zahl > 0:
+                    binaer = str(zahl % 2) + binaer
+                    zahl //= 2
+                return binaer
+
+            # Beispiel:
+            dezimalzahl = int(input("Gib eine Dezimalzahl ein: "))
+            binaerzahl = dezimal_zu_binaer(dezimalzahl)
+            print(f"Die Binärdarstellung von {dezimalzahl} ist {binaerzahl}")
+
+            </code></pre>
+
+            <p>Oder mit Rekursion:</p>
+            <pre><code>
+            def bin_rek(n):
+                return '0' if n == 0 else bin_rek(n // 2) + str(n % 2)
+            </code></pre>
+
+            <h3>Fakultät</h3>
+            <pre><code>
+            def f(n): 
+                return 1 if n < 2 else n*f(n-1)
+            </code></pre>
+        </div>
         
 
     </main>
