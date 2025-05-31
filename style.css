@@ -67,4 +67,21 @@ a:visited
 div
 {
     background-color: #E0E0E0;
+
+    /*Center a div*/
+    width: 50%;
+    margin: auto;
+}
+
+div p 
+{
+    text-align: justify;
+    padding-left: 10px;
+}
+
+ol li
+{
+   text-align: justify;
+   display: block;
+   margin-bottom: 10px;
 }
