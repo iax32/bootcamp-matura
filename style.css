@@ -5,12 +5,14 @@ html
     color: #333;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body 
 {
     margin: 0;
     padding: 0;
+    
 }
 
 h1 
@@ -87,6 +89,7 @@ div
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    
 }
 
 div p 
