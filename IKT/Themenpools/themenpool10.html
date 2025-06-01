@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>IKT - Themenpool 1: Mathematische Informationsverarbeitung</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h1>Themenpool 10: Algorithmen, Datenstrukturen und Programmierung</h1>
+        <div>
+            <h2>A - Zellbezüge und Funktionen</h2>
+            <h3>Zellbezüge</h3>
+            <p>
+            Zellbezüge in Excel können <strong>absolut oder relativ</strong> sein. Dies hat eine Bedeutung, wenn eine Zelle kopiert
+            wird. <br>
+            - In einem <b>absoluten Bezug bleibt der Bezugswert gleich</b>, <br>
+            - bei einem relativen Bezug ändert er sich relativ zur vorherigen Position. <br>
+            Man kann Bezüge auch nur semi-relativ, bzw. absolut machen und nur
+            entweder den x-Wert oder den y-Wert relativ oder absolut stellen. Beides ist möglich mit der Taste f4.
+            In Excel sind auch Diagramme ein wichtiges Tool, um Information graphisch darzustellen. Ein Nachteil
+            mit Diagrammen ist jedoch, dass z.B. durch Verschieben der y-Achse (sprich der scheinbare Ursprung
+            ist nicht (0|0), sondern z.B. (0|50)) die Werte anders scheinen. So ist es möglich die Meinung des
+            Betrachters zu verändern, wenn z.B. in einer Zeitung von einem Aktienindex ein Graph abgebildet ist
+            und sich dieser fast an den y-Wert des vermeintlichen Ursprungs annähert.    
+            </p>
+        </div>
+
+        <div>
+            <h2>B - Zahlentheorie in der It-Branche</h2>
+            <h3>Teilbarkeit</h3>
+            <p>
+            Die Phrase Element Ganze Zahlen steht für folgende Symbolik: <br>
+            Jede Zahl ist durch 1 teilbar. Jede Zahl ist durch sich selbst teilbar. Die 0 ist durch jede Zahl teilbar,
+            auch durch 0. Außer der 0 ist keine Zahl durch 0 teilbar. Ist eine Zahl durch d teilbar, dann auch
+            durch -d.
+            Die Teiler 1, -1, a und -a sind die trivialen Teiler von a. Die nichttrivialen positiven Teiler von a werden
+            auch Faktoren von a genannt.
+            Die Relation | ("teilt") in ganze Zahlen ist transitiv, d.h. für alle a, b, c Element ganze Zahlen gilt
+            </p>
+
+            <h3>Primzahlen</h3>
+            <p>Eine Zahl a Element natürliche Zahlen, a > 1 heißt Primzahl, wenn sie nur triviale Teiler, d.h. keine
+            Faktoren hat. Anderenfalls heißt sie zusammengesetzt.</p>
+
+            <h3>Größter gemeinsamer Teiler (ggt)</h3>
+            <p>
+            Seien a, b Element ganze Zahlen. Eine Zahl d Element ganze Zahlen ist ein gemeinsamer Teiler von
+            a und b, wenn <br>
+            d | a und d | b.
+            Seien a, b Element ganze Zahlen. Eine Zahl g Element ganze Zahlen heißt größter gemeinsamer
+            Teiler von a und b, wenn für alle d Element ganze Zahlen gilt <br>
+            d | a und d | b genau dann, wenn d | g,
+            d.h. alle gemeinsamen Teiler von a und b sind auch Teiler von g, und alle Teiler von g sind auch
+            gemeinsame Teiler von a und b.1) <br>
+            In Z ist der größte gemeinsame Teiler von zwei Zahlen bis auf das Vorzeichen eindeutig bestimmt.
+            Eigentlich kann man deshalb nicht von dem größten gemeinsamen Teiler sprechen, denn mit g ist
+            auch stets -g größter gemeinsamer Teiler. Eindeutigkeit wird erreicht, indem der nichtnegative
+            größte gemeinsame Teiler als der größte gemeinsame Teiler angesehen wird. <br>
+            Die Funktion ggt : ist definiert durch 
+            ggt(a, b) = g,
+            wobei g größter nichtnegativer gemeinsamer Teiler von a und b ist.
+            Zwei Zahlen a, b Element ganze Zahlen werden als teilerfremd bezeichnet, wenn ggt(a, b) = 1 ist.    
+            </p>
+
+            <h3>Kongurenz Modulo n</h3>
+            <p>
+            Das Wort ‚kongruent‘ steht für: <br>
+            Sei n Element natürliche Zahlen. Die Relation kongruent modulo n auf der Menge der ganzen
+            Zahlen ganze Zahlen ist wie folgt definiert: <br>
+            für alle a, b Element ganze Zahlen.
+            Zwei Zahlen sind also kongruent (modulo n), wenn ihre Differenz durch n teilbar ist.
+            Die Relation kongruent (mod n) ist eine Kongruenzrelation, d.h. eine verknüpfungstreue
+            Äquivalenzrelation, denn es gilt für alle a, a', b, b' Element ganze Zahlen
+            Sei a Element ganze Zahlen, n Element natürliche Zahlen. Die Operation mod ist wie folgt definiert:
+            Es ist zu unterscheiden zwischen der Operation mod n und der Relation kongruent (mod n). Wenn a
+            mod n = b ist, so ist zwar stets a kongruent b (mod n), umgekehrt jedoch nicht, denn z.B. ist 8
+            kongruent 6 (mod 2), aber 8 mod 2 ≠ 6. <br>
+            Zwei ganze Zahlen a und b sind kongruent modulo n, wenn sie bei ganzzahliger Division durch n
+            denselben Rest ergeben:
+            </p>
+
+            <h3>Alogrithmitische Zahlentheorie</h3>
+            <p>Die algorithmische Zahlentheorie ist ein Teilgebiet der Zahlentheorie und legt den Fokus darauf
+            zahlentheoretische Probleme algorithmisch effizient umzusetzen. Sie wird vor allem sehr viel in der
+            Kryptographie, durch Primfaktorzerlegung (siehe Kapitel 3.B) und durch Algebraische Zahlentheorie
+            (ECC) und in der Codierungstheorie verwendet.</p>
+
+            <h3>Komplexität</h3>
+            <p>Ein wichtiger Faktor von Algorithmen ist die Komplexität eines solchen. Sie wird mit folgenden
+            Faktoren gemessen: <br>
+            - Ressourcenverbrauch <br>
+            - Rechenzeit <br>
+            - Speicherplatzbedarf <br>
+            - Größe eines Schaltkreises <br>
+            - Anzahl benötigter Prozessoren</p>
+
+            <h3>Kosten eines Algorithmus</h3>
+            <p>
+            Ein weiterer wichtiger Faktor eines Algorithmus sind dessen Kosten. Diese sind mit der Anzahl der
+            benötigten Iterationen definiert. Als Beispiel dient hier zum Beispiel der Sortieralgorithmus Bubble Sort;
+            dieser hat Kosten von O(n2).    
+            </p>
+
+            <h3>Laufzeitbestimmungen</h3>
+            <p>
+            Die Laufzeit ist die Zeit, die ein Programm zur Bewältigung einer Aufgabe benötigt. Sie folgt in der der
+            Kompilierung. Die Laufzeit von Algorithmen wird nicht in Zeiteinheiten angegeben, sondern in
+            Iterationen. Das Hauptziel ist es exponentielle Laufzeiten zu verhindern.    
+            </p>
+
+            <h3>Beispiele für Algorithmen</h3>
+            <p>Da es bis heute noch keine Formel gibt zur Ermittlung von Primzahlen wird immer noch gelegentlich
+            das Sieb des Erastosthenes (276 v.Chr.) verwendet. Hierfür werden zuerst Zahlen in Reihen zu je 10
+            Zahlen dargestellt und dann alle Zahlen, welche Faktoren haben, ausgesiebt. So bleiben nur
+            Primzahlen übrig.</p>
+
+            <p>
+            Ein weiterer wichtiger Algorithmus ist der Euklidische Algorithmus. Dieser ist ein Algorithmus zur
+            Berechnung des ggTs zweier natürlicher Zahlen. Bei kleineren Zahlen (>100 Stellen) ist meist ein
+            Primfaktor bekannt, wodurch der ggT leicht zu ermitteln ist. Bei größeren Zahlen muss jedoch der
+            euklidische Algorithmus angewandt werden.    
+            </p>
+        </div>
+        
+    
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

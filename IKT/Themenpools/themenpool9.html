@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>IKT - Themenpool 1: Mathematische Informationsverarbeitung</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h1>Themenpool 9: Algorithmen, Datenstrukturen und Programmierung</h1>
+        <div>
+            <h2>A - Einsatz von Bibliotheken</h2>
+            <h3>Nutzen von Bibiliotheken</h3>
+            <p>
+            Bibliotheken sind sehr wichtig und hilfreich bei der Programmierung.<strong> Sie sind eine Sammlung an
+            Modulen aus anderen Projekten.</strong> Je nach Sprache bieten sie unterschiedliche Funktionen an. Es gibt
+            drei unterschiedliche Arten von Bibliotheken: <br>
+            - Die Standardbibliothek, <br>
+            - eigene Bibliotheken und <br>
+            - Bibliotheken von Drittanbietern. <br>
+            Sie helfen genauso wie Funktionen bei der Modularisierung von
+            Projekten. <b>Code muss durch Bibliotheken nicht jedes Mal neu geschrieben werden, sondern es
+            können einfach die Methoden aus der Bibliothek verwendet werden.</b> Beim Import gibt es viele
+            Möglichkeiten, wie z.B. der Import von nur wenigen Methoden oder der Import eines Moduls mit
+            einem anderen Namen. Es gibt auch Pakete, welche importiert werden können
+            </p>
+
+            <h4>Beispiele</h4>
+            <p>Als Beispiel für Module aus Bibliotheken dient z.B. das Modul <b>math.</b> Dieses hat viele Operationen aus
+            der Mathematik. So bietet es Funktionen wie math.pi, math.cos oder math.sin an. Ein weiteres Modul
+            ist das Modul os, welches einige Interaktionen mit dem Betriebssystem möglich macht. Das Modul
+            random bietet Funktionen an, mit denen man z.B. zufällige Zahlen finden kann.</p>
+        </div>
+
+        <div>
+            <h2>B - Fachkonzepte Klassen</h2>
+            <h3>Klassen</h3>
+            <p>Klassen sind ähnlich wie Methoden, bzw. Funktionen. Auch sie speichern Code in ihnen, der in
+            anderen Segmenten aufgerufen werden kann. Eine Klasse besteht aus mehreren Funktionen. Sie
+            dient zur besseren Organisation eines Projektes. Eine Klasse ist selbst ein Objekt und kann
+            dementsprechend Attribute haben. Als Beispiel dient hier eine Klasse, die ein Konto repräsentiert</p>
+
+            <pre><code>
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age) 
+            </code></pre>
+
+            <p>
+            Sie besteht wie man sehen kann aus einem Konstruktor (__init__), und aus mehreren Funktionen,
+            welche Aktionen mit dem Objekt ausführen. Es ist auch möglich Elemente aus einer Klasse in eine
+            andere Klasse zu vererben. Hierfür muss bei der Definierung der Klasse die Oberklasse in der Klammer
+            angegeben werden. Auch die Vererbung aus mehreren Klassen ist hiermit möglich
+            </p>
+        </div>
+        
+        
+        
+            
+              
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

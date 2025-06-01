@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>IKT - Themenpool 1: Mathematische Informationsverarbeitung</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h1>Themenpool 12: Datenmodelle und Datenbanksysteme</h1>
+        <div>
+            <h2>A - Relationale Datenbanken</h2>
+            <h3>SQL</h3>
+            <p>
+            Structured Query Language (SQL) ist ein System für Datenbanken. In ihr Können Datenbanken erstellt
+            werden, welche aus Tabellen bestehen und dynamisch miteinander verbunden werden. Diese
+            Verbindungen werden von sogenannten Keys unterstützt. Diese können in maximal einen
+            Primärschlüssel pro Tabelle und Fremdschlüssel eingeteilt werden. Daten eines Primärschlüsseln
+            müssen einzigartig sein, daher ist es oft üblich einen automatisch inkrementierenden Wert in einer
+            Tabelle zu haben (meist ID), um einen einzigartigen Wert zu haben. Fremdschlüssel sind
+            Primärschlüssel einer anderen Tabelle, dessen Werte in dieser Tabelle vertreten sind
+            </p>
+
+            <h3>Relationale Datenbanken vs. Non-Relationale Datenbanken</h3>
+            <p>Datenbanken können anhand von mehreren Faktoren in Gruppen eingeteilt werden. So ist eine
+            dieser Einteilungen in relationale und non-relationale Datenbanken. Non-Relationale Datenbanken
+            verwenden normal nicht die üblichen Tabellenstrukturen, welche von relationalen Datenbanken
+            eingesetzt werden. Relationale Datenbanken hingegen werden in Spalten und Zeilen aufgeteilt.
+            Jede Zeile repräsentiert hierbei einen Eintrag. Um mehrere relationale Tabellen zu verbinden, wird ein
+            sogenannter Key benötigt. Mit ihm können mehrere Tabellen verbunden werden. Im Vergleich dazu
+            sind non-relationale Datenbanken wieder in mehrere Kategorien einteilbar: Key-Value Systeme
+            funktionieren wie Dictionaries; Dokument Systeme speichern alle Daten eines Eintrags in einem
+            Dokument. Dies waren die zwei wichtigsten Typen an non-relationalen Datenbanken, jedoch gibt es
+            noch viele andere. Generell sind relationale Datenbanken variabler einsetzbar, wobei non-
+            relationale Datenbanken in sehr spezifischen Fällen deutlich bessere Performance bieten.</p>
+            
+        </div>
+
+        <div>
+            <h2>B - Datenbanken in der Webentwicklung</h2>
+            <h3>Statische vs. Dynamische Daten</h3>
+            <p>Daten können entweder statisch oder dynamisch sein. Statische Daten werden einmal eingeholt und
+            bleiben dann unverändert. Im Vergleich dazu werden dynamische Daten mehrmals eingeholt und
+            daher wird die Integrität von ihnen kontinuierlich überprüft. Vor allem in einer Zeit in der Daten
+            schneller als je zuvor ungenau werden, sind daher dynamische, wenn auch aufwendiger zu erhalten,
+            sehr wichtig. So haben zum Beispiel 2014 94% der Unternehmen einer Studie angegeben, dass sie
+            glauben ihre Daten wären nicht mehr aktuell.</p>
+
+            <h3>Webserver vs. Datenbankserver</h3>
+            <p>Sowohl Webserver als auch Datenbankserver sind zwingend notwendig, um eine dynamische
+            Webseite aufrecht zu erhalten. Der Hauptunterschied zwischen den Beiden sind die Daten, die sie
+            verwalten und speichern. Webserver sind dafür zuständig Webseiten zu hosten und Content an
+            Benutzer zu liefern. Datenbankserver hingegen speichern und verwalten Daten. Webserver sind meist
+            mit Software wie Apache, oder ähnlichen, ausgerüstet; während Datenbankserver meist mit
+            Software wie MySQL oder PostgreSQL ausgestattet sind. Auch die Programmiersprachen
+            unterscheiden sich stark: Während Webserver meist mit Sprachen wie PHP arbeiten, arbeiten
+            Datenbankenserver mit SQL. Gemeinsam bilden sie jedoch eine vollständige dynamische Webseite.
+            Weder der Datenbankserver noch der Webserver kann allein die gesamte Webseite hosten.</p>
+            
+            <h3>TCP/IP</h3>
+            <p>Um im Internet kommunizieren zu können, muss mit gewissen Protokollen gearbeitet werden. Diese
+            Protokolle bilden gemeinsam die sogenannte Internet Protocol Suite, oder abgekürzt: TCP/IP. Um ein
+            TCP/IP Netzwerk mit dem Internet verbinden zu können wird eine IP-Nummer benötigt. Sollte man
+            auch am Domain Name System (DNS) teilnehmen wollen wird auch ein einzigartiger Domain-Name
+            benötigt. Es werden weiters sogenannte Protokollschichten angewandt: Protokolle auf einer Schicht
+            agieren komplett unabhängig von Protokollen auf einer anderen Schicht, obwohl sie auf derselben
+            Maschine sind.</p>
+
+            <h3>OSI-Schichtenmodell</h3>
+            <p>Eines dieser Modelle ist das ‚Open Systems Interconnection model‘ (OSI). Dieses ist in sieben
+            Schichten aufgeteilt:</p>
+
+            <p>
+            Die erste Schicht ist die Physische Schicht (Bitübertragungsschicht). Auf dieser werden Bits oder
+            Symbole übertragen. Außerdem muss hier festgelegt werden, wie diese codiert sind. Je nach Leiter
+            kann diese Kodierung unterschiedlich sein (Lichtwellenleiter -> Lichtwellen, Kupferkabeln -> EM-
+            Wellen, etc.). Als Hardware werden hier z.B. Hubs verwendet. Als Protokoll z.B. Ethernet.
+            Die zweite Schicht ist die Datensicherungsschicht. In dieser werden Daten in Frames eingeteilt und
+            mit einer Kontrollsumme versehen. So können fehlerhafte Daten erneut angefordert werden, was in
+            dieser Schicht jedoch noch nicht vorkommen darf. Weiters ermöglicht eine Datenflusskontrolle dem
+            Empfänger die Datenübertragungsgeschwindigkeit zu bestimmen. Als Hardware gelten hier z.B.
+            Switches oder Bridges. Als Protokoll kann auch hier Ethernet verwendet werden.
+            Die dritte Schicht ist die Vermittlungsschicht. Hier werden Frames zu Paketen verpackt und es wird
+            sich um das Routing gekümmert. Weiters werden IP-Pakete fragmentiert, sowie Routing-Tabellen
+            aktualisiert, um einen funktionierenden Transport von Paketen zu ermöglichen. Als Hardware gilt hier
+            z.B. der Router. Das hier verwendete Protokoll ist z.B. das IP.
+            Die vierte Schicht ist die Transportschicht. Zu ihren Aufgaben zählen unter anderem die Vermeidung
+            von Staus, die Segmentierung von Datenströmen und die Sicherstellung einer fehlerfreien
+            Übertragung. In dieser Schicht wird ein sogenanntes Datensegment, welches u.a. den Port enthält,
+            in ein Datenpaket gekapselt. Dieses bietet den Schichten 5 bis 7 einen einheitlichen Zugriff, sodass
+            diese die Eigenschaften des Kommunikationsnetzes nicht berücksichtigen müssen. Hier wird z.B. das
+            TCP verwendet.
+            Die fünfte Schicht ist die Sitzungsschicht. Hier wird sichergestellt, dass eine organisierte und
+            synchronisierte Verbindung stattfindet. Sollte die Sitzung dennoch zusammenbrechen werden
+            Checkpoints erstellt, an denen die Sitzung wiederhergestellt werden kann.
+            Die sechste Schicht ist die Darstellungsschicht. Sie stellt sicher, dass die Daten von beiden Systemen
+            gelesen werden können, und übersetzt sie, wenn nötig. Auch die Datenkompression und
+            Verschlüsselung zählen zu dieser Schicht.
+            Die letzte und siebte Schicht ist die Anwendungsschicht. Sie stellt anwendungsspezifische Funktionen
+            zur Verfügung.
+            Als Datenkapselung beschreibt man den Vorgang zwischen Schicht 2 bis 4, in dem immer weitere
+            Daten dem Header beigefügt werden, um eine leichtere Verarbeitung in den Schichten 5 bis 7 zu
+            ermöglichen.
+            </p>
+
+        </div>
+        
+        
+    
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
