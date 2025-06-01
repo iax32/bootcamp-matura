@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>IKT - Themenpool 1: Mathematische Informationsverarbeitung</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h1>Themenpool 5: Technische Grundlagen der Informationsverarbeitung</h1>
+        <div>
+            <h2>A - Dateisysteme im Vergleich</h2>
+        <h3>Windows vs. Unix</h3>
+        <p>
+        Unix ist ein Kommandozeilenbasiertes OS, während Windows ein Menü-basiertes OS ist. Während <br>
+        Windows von Microsoft lizenziert ist, befindet sich Unix unter der General Public License. Unix hat ein <br>
+        Text-basiertes Interface, welches die Benutzung durch neue User erschwert. Windows <br>
+        währenddessen hat ein GUI. Während Unix das stabilere, aber langsamere Multiprocessing <br>
+        unterstützt, verwendet Windows das schnellere, aber instabilere Multithreading. Unix verwendet das <br>
+        Unix File System (UFS), während Windows FAT32 und NTFS verwendet. Im Vergleich zu Windows ist Unix <br>
+        sicherer, da das Ausführen von .exe Dateien deutlich schwerer ist. Auch Viren können nur einen <br>
+        Benutzer infizieren und nicht Root selbst. Windows hat ein integriertes Backup und Recovery System; <br>
+        in Unix muss der Benutzer selbst ein solches System schaffen. Während mittlerweile beide sehr stabil <br>
+        sind, ist Unix immer noch etwas stabiler als Windows. Unix ist immer case-sensitive, während Windows <br>
+        nur optional case-sensitive ist.
+        </p>
+
+        <table>
+            <tr>
+                <th>Merkmal</th>
+                <th>Unix</th>
+                <th>Windows</th>
+            </tr>
+
+            <tr>
+                <td>Benutzeroberfläche</td>
+                <td>Textbasierend</td>
+                <td>GUI ( Menü-basiert )</td>
+            </tr>
+
+            <tr>
+                <td>Lizensierung</td>
+                <td>Open Source ( General Public License )</td>
+                <td>Proprietär ( Microsoft-lizensiert ) / Closed Source</td>
+            </tr>
+
+            <tr>
+                <td>Benutzerfreundlichkeit</td>
+                <td>Weniger Einsteigerfreundlich</td>
+                <td>Benutzerfreundlich</td>
+            </tr>
+
+            <tr>
+                <td>Parallelverarbeitung</td>
+                <td>Multiprocessing ( stabil, aber langsamer )</td>
+                <td>Multithreading ( schneller, aber potenziell instabil )</td>
+            </tr>
+
+            <tr>
+                <td>Dateisystem</td>
+                <td>Unix File System ( UFS )</td>
+                <td>FAT32, New Technology File System - NTFS</td>
+            </tr>
+
+            <tr>
+                <td>Sicherheit</td>
+                <td>Sehr Sicher ( z.B .exe schwer ausführbar, Root geschützt )</td>
+                <td>Weniger Sicher, höhere Anfälligkeit für Viren</td>
+            </tr>
+
+            <tr>
+                <td>Backup & Wiederherrstellung</td>
+                <td>Muss manuell eingerichtet werden</td>
+                <td>Integriertes System vorhanden</td>
+            </tr>
+
+            <tr>
+                <td>Stabilität</td>
+                <td>Sehr stabil</td>
+                <td>Ebenfalls stabil, aber etwas weniger als Unix</td>
+            </tr>
+
+            <tr>
+                <td>Groß-/Kleinschreibung</td>
+                <td>Immer case-sensitive</td>
+                <td>Case-sensitive optional</td>
+            </tr>
+        </table>
+
+
+        <h3>Dateisystem</h3>
+        <p>
+        Ein Dateisystem ist ein System für den Computer, welches bestimmt wo Dateien logisch platziert sind <br>
+        und wie sie benannt werden. Dateisysteme sind essentiell für die Funktionalität des Geräts, da <br>
+        Dateien ansonsten nicht von anderen Dateien isoliert wären. Man kann von Dateisystemen denken <br>
+        wie von einem Index. Außerdem beinhalten Dateisysteme Metadaten einer Datei und andere <br>
+        Konventionen für z.B. die Benennung von Dateien. Sie können auch Berechtigungen von einzelnen <br>
+        Benutzern regeln.    
+        </p>
+
+        <p>Ein Dateisystem ist eine zentrale Komponente eines Betriebsystems, die bestimmt:</p>
+        <p>1. Wie und Wo Dateien logisch auf einem Dateiträger gespeichert werden</p>
+        <p>2. Wie Dateien bennant werden dürfen ( Namenskonvention )</p>
+
+        <p>Funktionen eines Dateisystems:</p>
+        <p>1. Organisation: Ordnet Dateien strukturiert ( wie ein Index in einem Buch ).</p>
+        <p>2. Isolation: Trennt Dateien voneinander, damit sie sich nicht gegenseitig beinflussen.</p>
+        <p>3. Metadaten: Speichert Zusatzinformationen wie: <br>
+        - Erstellungsdatum <br>
+        - Größe <br>
+        - Dateityp <br> 
+        - Zugriffsrechte</p>
+        <p>4. Berechtigungen: Bestimmt welcher Benutzer was mit einer Datei tun darf ( lesen, schreiben, ausführen )</p>
+
+        <h3>NTFS</h3>
+        <p>New Technology File System, oder NTFS, ist der Nachfolger der File Allocation Table (FAT) und kann <br>
+        daher Datenträger aus FAT32/16/8, ohne jeden Eintrag neu schreiben zu müssen, konvertieren. <br>
+        Außerdem ist es das standardmäßige Dateisystem von Windows seit Windows NT 3.1 (Juli 1993). Es hat <br>
+        keine Trennung zwischen Index- und Datenbereichen. Dateiblöcke können mithilfe von <br>
+        Bereichsbäumen (B-Trees) aufgefunden werden, was zu einer sehr komplexen Implementierung, <br>
+        jedoch einer schnellen Suche führt. Auch Verzeichnisse sind eine Datei, was zu sehr vielen Metadaten <br>
+        führt. Hat eine Meistertabelle, in der alle Metadaten von allen Dateien gespeichert sind (Master File <br>
+        Table -> MFT).</p>
+
+        <h3>UFS</h3>
+        <p>
+        Bei UFS werden Dateien in Blöcken im Blockbereich gespeichert. Diese können mithilfe von Index- <br>
+        Nodes im Indexbereich aufgefunden werden. Ein Superblock enthält währenddessen alle <br>
+        wichtigen Informationen des Dateisystems (Bereichsgrößen, Datum, Name, Blockgröße, …). <br>
+        </p>
+
+
+        </div>
+
+              
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
