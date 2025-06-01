@@ -13,12 +13,12 @@
 
     <nav>
         <ul>
-            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../index.html">Home</a></li>
         </ul>
     </nav>
     
     <main>
-        <h1>Themenpool 2: Praktische Infromationsverarbeitung</h2>
+        <h1>Themenpool 2: Praktische Informationsverarbeitung</h2>
         <div>
             <h2>A - Responsive Webdesign</h2>
             <h3>HTML5</h3>
@@ -112,6 +112,50 @@
 
         <div>
             <h2>B - Dynamische Webseiten</h2>
+            <h3>Statische Webseiten</h3>
+            <p>Auf statische Webseiten wird jedem Benutzer der gleiche Inhalt angezeigt und Veränderungen auf <br> der Webseite können nur durch Veränderungen im Quelcode ausgelöst werden</p>
+            
+            <h3>HTML und CSS</h3>
+            <p>HTML und CSS bilden gemeinsam statische Webseiten. Diese zeichnen sich dadurch aus, dass Sie <br>
+            sehr simpel sind und im Endeffekt nicht als echte Programmiersprache bezeichnet werden können.<br>
+            Viel eher sind sie eine Art Text zu formatieren. CSS kann auch in dynamischer Weise verwendet werden.</p>
+
+            <h3>Dynmaische Webseiten</h3>
+            <p>Auf Dynmaischen Webseiten hat jeder Benutzer eine andere Sicht. Die Webseite kann zum Beispiel <br>
+            auf Datenbanken zurückgreifen, um jemanden zu identifizieren und so einen anderen Inhalt <br>
+            anzuzeigen. Auch Scripts mit Alterts oder Ähnlichem können vorkommen.</p>
+
+            <h3>PHP</h3>
+            <p>PHP ist eine Programmiersprache, welche vorallem zur Kommunikation mit Datenbankservern <br>
+            (über SQL) verwendet wird. Die Scripts werden alle am Server ausgeführt und sind für den Benutzer nicht <br>
+            auslesbar. Sie ist ein wichtiger Bestandteil dynamischer Webseiten.</p>
+
+            <h3>Javascript</h3>
+            <p>Javascript sorgt dafür, dass Webseiten interaktiv und dynamisch gestaltet werden. Scripts in JS <br>
+            werden auch am Client ausgeführt und sind daher auch für den Benutzer auslesbar.</p>
+
+            <h2>B - Praxis Beispiele</h2>
+            <p>Zur Praxis muss ein Verbindungscript mit Php erstellt werden.</p>
+            <p>Es muss zuerst XAMPP installiert werden auf dem Gerät. Danach navigiert man zum Ordner C:\xampp\htdocs und fügt dort seine index.php datei hinzu <br>
+            der folgenden Verbindungsscript enthält:</p>
+            <pre><code>
+&lt;?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "testdb";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+} else {
+    echo "Verbindung erfolgreich!";
+}
+?&gt;</code></pre>
+            <p>In xampp wird dann bei den Modulen Apache und Sql auf start gedrückt. Beim Modul SQL wird auf Admin geklickt. Dort wird unter "neu" eine neue Datenbank erstellt. <br>
+            Ersetzte $dbname = "testdb" mit dem namen der erstellten Datenbank. Danach wird im Webbrowser localhost/index.php geöffnet.
+            </p>
         </div>
     </main>
 

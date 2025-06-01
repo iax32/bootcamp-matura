@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>IKT - Themenpool 1: Mathematische Informationsverarbeitung</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Themenpool 3: Konzepte der Informationsverarbeitung</h2>
+        <div>
+            <h2>A - John von Neumann Architektur</h2>
+            <h3>John von Neumann Maschine</h3>
+            <p>Frühe mechanische Rechenmaschinen waren höchst komplex und konnten nur streng sequenziell <br>
+            arbeiten. John von Neuman entwickelte daher die John von Neumann Maschine, dessen Regel, <br>
+            die John von Neuman Architektur, noch bis heute einen großen Einfluss auf unsere Hardware hat. <br>
+            Diese sind folgende:</p>
+            <ol>
+                <li>Ein programmgesteuerter Rechner besteht aus:</li>
+                <ol>
+                    <li>Central Processing Unit (CPU) mit</li>
+                    <ol>
+                        <li>Arithmetical Logical Unit (ALU).</li>
+                        <li>Steuereinheit.</li>
+                    </ol>
+
+                    <li>Speicher</li>
+                    <li>Ein- und Ausgabe Einheiten.</li>
+                    <li>Interne Datenwege (Busse).</li>
+                </ol>
+                <li>Die Zahlen werden im Rechner binär dargestellt ( z.B 01010101 ).</li>
+                <li>Die Struktur ist unabhängig von der Funktion, Aufgaben werden durch Programme gelöst.</li>
+                <li>Programme und benötigte Daten sind in einem gemeinsamen Speicher. Die Speicherplätze <br>
+                sind gleich lang und werden über Adressen einzeln angesprochen ( Register )</li>
+                <li>Befehle geben nur die Speicheradresse an, wo die Daten abgelegt sind, und nicht die Daten selbst ( Pointer )</li>
+            </ol>
+            <h3>EVA-Prinzip</h3>
+            <p>Das EVA-Prinzip ist ein <strong>Prinzip der Datenverarbeitung</strong>. Es besteht aus drei Schritten: <br><br>
+            <b>
+            1. Eingabe. <br>
+            2. Verarbeitung durch Datenverarbeitungsanlagen.<br>
+            3.Ausgabe. <br> <br>
+            </b>
+            Daher kann es auch bei nicht informatischen Fällen angewendet werden, wird jedoch meist zur Verbindung von Hardware angewandt.
+            </p>
+
+            <h3>Hardware von John von Neumann Maschine</h3>
+            <p>In der Neumann Architektur werden nur wenige Komponente verwendet. Zu diesen gehören: <br> <br>
+            <b>
+            - Die CPU ( mit ALU und Kontroll/Steuereinheit, aber ohne Zwischenspeicher), <br>
+            - Ein Speicher, <br>
+            - Ein- und Ausgabemöglichkeiten, <br>
+            - Busse ( Mainboard )
+            </b>
+            </p>
+
+            <h2>A - Praxis Beispiele</h2>
+            <p>Hier muss eine Art 'Dumme' KI programmiert werden in Python.  Dazu kann man Dictonaries verwendet etc. <br></p>
+            <pre><code>
+antworten = {
+    "hallo": "Hallo! Schön, dass du da bist!",
+    "hilfe": "Ich bin ein kleiner Chatbot. Du kannst 'hallo', 'hilfe' oder 'wetter' eingeben.",
+    "wetter": "Heute ist es sonnig mit ein paar Wolken.",
+}
+
+print("Mini-Chatbot gestartet! Gib 'exit' ein, um zu beenden.")
+
+while True:
+    eingabe = input("Du: ").lower()  # Eingabe vom Benutzer, alles in Kleinbuchstaben
+
+    if eingabe == "exit":
+        print("Chatbot: Auf Wiedersehen!")
+        break  # Schleife beenden
+
+    # Antwort suchen und ausgeben
+    if eingabe in antworten:
+        print("Chatbot:", antworten[eingabe])
+    else:
+        print("Chatbot: Das habe ich leider nicht verstanden.")</code></pre>
+
+        </div>
+
+        <div>
+            <h2>B - Technicken der Steganographie</h2>
+            <h3>Steganographie</h3>
+            <p>
+                <strong>Die Steganographie beschreibt das Verstecken von Nachrichten in anderen Nachrichten oder <br>
+                Objekten.</strong> Die versteckte Nachricht kann hierbei nicht einfach so gelesen werden, sondern muss <br>
+                zuerst decodiert werden. Das Wort kommt vom griechischen steganos (versteckt) und graphia <br>
+                (schreiben). Im Vergleich zur Kryptographie versteckt Steganographie nicht nur den Inhalt der <br>
+                Nachricht, sondern auch die Nachricht an sich. So ist das Ziel nicht zwingend eine besonders <br>
+                komplexe Verschlüsselung, sondern viel mehr niemanden dazu zu bringen, die Nachricht lesen zu <br>
+                wollen.
+            </p>
+
+            <p>
+                Früher wurden z.B. Nachrichten mit Spezialtinte versteckt. Eine weitere Methode war auch das <br>
+                Verstecken von Nachrichten in Morsecode als Knoten auf einem Faden, welcher zu einem <br>
+                Kleidungsstück genäht wurde. Die Spartaner verwendeten sogenannte Skytalen, Stöcke mit einem <br>
+                gewissen Durchmesser um welche ein Lederstreifen mit einer Botschaft gewickelt wurde <br>
+            </p>
+
+            <h3>Semagramme - Determinative</h3>
+            <p>
+                Ein Semagramm, bzw. Determinativ ist in antiken Sprachen ein stummes Zusatzzeichen, welches die <br>
+                Bedeutung des beistehenden Wortes verändern kann. Weiters können bei Hieroglyphen auch <br>
+                gesamte Wörter als Semagramme bezeichnet werden. Generell sind Semagramme Bilder, welche <br>
+                eine gewisse Bedeutung vermitteln, welche meist nur einer gewissen Gruppe bekannt ist. <br>
+            </p>
+
+            <h3>Sonagramm</h3>
+            <p>
+                Ein Sonagramm ist ein Schall-Spektrogramm. Sprich eine visuelle Darstellung von Schall. Die x-Achse <br>
+                repräsentiert hierbei die Zeit, während die y-Achse die Frequenz darstellt. Die Amplitude wird mit der <br>
+                Stärke der Einfärbung an einer Stelle gemessen. So kann man in einer Audio-Datei Bilder verstecken. <br>
+                Als Beispiel dient hier der Song ‚My Violent Heart‘, welcher das Albumcover in sich versteckt hat. <br>
+            </p>
+
+            <h3>Least Significant Bit</h3>
+            <p>Hierbei werden jeweils die zwei niederwertigsten Bits von jeder Farbkomponente ersetzt. Wenn man <br>
+            diese dann extrahiert und normalisiert, erhält man ein Bild, welches zuvor in einem anderen Bild <br>
+            versteckt war. Als Beispiel ein Bild einer Katze, welches im Bild eines Baumes versteckt war. <br>
+            </p>
+
+            <h3>RSA-System</h3>
+            <p>
+                Das RSA-System ist ein asymmetrisches Verschlüsselungserfahren, welches seit 1977 von Rivest, Shamir <br>
+                und Adleman öffentlich beschrieben wurde. Es benötigt 3 Zahlen von denen 2 öffentlich sind. Diese <br>
+                Zahlen werden folgendermaßen ermittelt: n = p * q, wobei p und q sehr große (>100 Stellen) <br>
+                Primzahlen sind. Die nächste der drei Zahlen ist e, welche teilerfremd zur Zahl (p-1)(q-1) ist. e und n <br>
+                bilden gemeinsam den public Key, d.h. diese beiden können ohne Probleme veröffentlicht werden. <br>
+                Um eine Nachricht zu verschicken, wird die Nachricht m in folgende Formel eingesetzt: c = me (mod <br>
+                n), wobei c die verschlüsselte Nachricht ist. Um sie zu entschlüsseln, wird nun die Zahl d benötigt. <br>
+                Diese wird mit folgender Formel errechnet: de = 1 (mod (p-1)(q-1)). Die Formel zur Entschlüsselung ist <br>
+                nun m = cd (mod n). Hier ist es daher sehr deutlich sichtbar, dass alle zur Verschlüsselung benötigten <br>
+                Faktoren (n, e) ohne Probleme veröffentlicht werden können, da der zur Entschlüsselung benötigte <br>
+                Faktor (d), bzw. die zur Errechnung von jenen benötigten Faktoren (p, q) nahezu unmöglich mit den <br>
+                zur Verschlüsselung benötigten Faktoren (n, e) errechnet werden können. <br>
+
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
