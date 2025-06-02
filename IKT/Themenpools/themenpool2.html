@@ -86,12 +86,12 @@
             </table>
             
             <h3>CSS3</h3>
-            <p><strong>CSS3</strong> bestimmt das Aussehen einer Webseite. Wird meist in einer einziegen Datei zusammengefasst. <br>
-            kann sowohl normale HTML tags/Elemente wie &lt;div&gt; ansprechen, als auch Klassen wie .class oder IDs wie #ID. <br>
+            <p><strong>CSS3</strong> bestimmt das Aussehen einer Webseite. Wird meist in einer einziegen Datei zusammengefasst.
+            kann sowohl normale HTML tags/Elemente wie &lt;div&gt; ansprechen, als auch Klassen wie .class oder IDs wie #ID. 
             Klassen werden für mehrere Elemente verwendet, während IDs einziegartig sein sollten.</p>
 
             <h3>Box-Model</h3>
-            <p>In HTML/CSS hat jeder Inhalt selbst eine Breite und Höhe. Dann werden zwiebelartig immer weitere Boxen rundherum gelegt. <br>
+            <p>In HTML/CSS hat jeder Inhalt selbst eine Breite und Höhe. Dann werden zwiebelartig immer weitere Boxen rundherum gelegt. 
             Dies findet in der folgenden Reihenfolge statt:
             <strong>padding -> border -> margin</strong>
             <br>
@@ -99,12 +99,12 @@
             </p>
 
             <h3>Fluid Grid</h3>
-            <p>Ein fluid grid sorgt dafür, dass sich eine Webseite an die Bildschirm- bzw. Anwendungsgröße anpasst. <br>
-            Es erreicht dies damit, dass es Spalten mit einer relativen Breite (bei 12 Spalten 8.3%) erschafft <br>
+            <p>Ein fluid grid sorgt dafür, dass sich eine Webseite an die Bildschirm- bzw. Anwendungsgröße anpasst. 
+            Es erreicht dies damit, dass es Spalten mit einer relativen Breite (bei 12 Spalten 8.3%) erschafft 
             ( im Vergleich: responsive grid = absolute Breite).</p>
             
             <p>Dies führt zu einer organischen Skalierung, kann jedoch bei kleineren Bildschirmen überwältigend wirken und sollte daher br
-            <br>mit einem responsivem Grid kombiniert werden. Hierführt unbedingt notwendig ist die CSS-Einstellung: <br>
+            mit einem responsivem Grid kombiniert werden. Hierführt unbedingt notwendig ist die CSS-Einstellung: <br>
             <pre><code>border-sizing: border-box;</code></pre>
             Für <b>alle</b> Elemente
             </p>
@@ -113,30 +113,30 @@
         <div>
             <h2>B - Dynamische Webseiten</h2>
             <h3>Statische Webseiten</h3>
-            <p>Auf statische Webseiten wird jedem Benutzer der gleiche Inhalt angezeigt und Veränderungen auf <br> der Webseite können nur durch Veränderungen im Quelcode ausgelöst werden</p>
+            <p>Auf statische Webseiten wird jedem Benutzer der gleiche Inhalt angezeigt und Veränderungen auf  der Webseite können nur durch Veränderungen im Quelcode ausgelöst werden</p>
             
             <h3>HTML und CSS</h3>
-            <p>HTML und CSS bilden gemeinsam statische Webseiten. Diese zeichnen sich dadurch aus, dass Sie <br>
-            sehr simpel sind und im Endeffekt nicht als echte Programmiersprache bezeichnet werden können.<br>
+            <p>HTML und CSS bilden gemeinsam statische Webseiten. Diese zeichnen sich dadurch aus, dass Sie 
+            sehr simpel sind und im Endeffekt nicht als echte Programmiersprache bezeichnet werden können.
             Viel eher sind sie eine Art Text zu formatieren. CSS kann auch in dynamischer Weise verwendet werden.</p>
 
             <h3>Dynmaische Webseiten</h3>
-            <p>Auf Dynmaischen Webseiten hat jeder Benutzer eine andere Sicht. Die Webseite kann zum Beispiel <br>
-            auf Datenbanken zurückgreifen, um jemanden zu identifizieren und so einen anderen Inhalt <br>
+            <p>Auf Dynmaischen Webseiten hat jeder Benutzer eine andere Sicht. Die Webseite kann zum Beispiel 
+            auf Datenbanken zurückgreifen, um jemanden zu identifizieren und so einen anderen Inhalt 
             anzuzeigen. Auch Scripts mit Alterts oder Ähnlichem können vorkommen.</p>
 
             <h3>PHP</h3>
-            <p>PHP ist eine Programmiersprache, welche vorallem zur Kommunikation mit Datenbankservern <br>
-            (über SQL) verwendet wird. Die Scripts werden alle am Server ausgeführt und sind für den Benutzer nicht <br>
+            <p>PHP ist eine Programmiersprache, welche vorallem zur Kommunikation mit Datenbankservern 
+            (über SQL) verwendet wird. Die Scripts werden alle am Server ausgeführt und sind für den Benutzer nicht 
             auslesbar. Sie ist ein wichtiger Bestandteil dynamischer Webseiten.</p>
 
             <h3>Javascript</h3>
-            <p>Javascript sorgt dafür, dass Webseiten interaktiv und dynamisch gestaltet werden. Scripts in JS <br>
+            <p>Javascript sorgt dafür, dass Webseiten interaktiv und dynamisch gestaltet werden. Scripts in JS 
             werden auch am Client ausgeführt und sind daher auch für den Benutzer auslesbar.</p>
 
             <h2>B - Praxis Beispiele</h2>
             <p>Zur Praxis muss ein Verbindungscript mit Php erstellt werden.</p>
-            <p>Es muss zuerst XAMPP installiert werden auf dem Gerät. Danach navigiert man zum Ordner C:\xampp\htdocs und fügt dort seine index.php datei hinzu <br>
+            <p>Es muss zuerst XAMPP installiert werden auf dem Gerät. Danach navigiert man zum Ordner C:\xampp\htdocs und fügt dort seine index.php datei hinzu 
             der folgenden Verbindungsscript enthält:</p>
             <pre><code>
 &lt;?php
@@ -153,7 +153,7 @@ if ($conn->connect_error) {
     echo "Verbindung erfolgreich!";
 }
 ?&gt;</code></pre>
-            <p>In xampp wird dann bei den Modulen Apache und Sql auf start gedrückt. Beim Modul SQL wird auf Admin geklickt. Dort wird unter "neu" eine neue Datenbank erstellt. <br>
+            <p>In xampp wird dann bei den Modulen Apache und Sql auf start gedrückt. Beim Modul SQL wird auf Admin geklickt. Dort wird unter "neu" eine neue Datenbank erstellt. 
             Ersetzte $dbname = "testdb" mit dem namen der erstellten Datenbank. Danach wird im Webbrowser localhost/index.php geöffnet.
             </p>
         </div>

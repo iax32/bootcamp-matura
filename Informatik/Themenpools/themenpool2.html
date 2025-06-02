@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>IKT - Themenpool 2: Digitale Medien</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Themenpool 1: Kommunikation und Kooperation</h2>
+        <div>
+            <h2>A- Raster und Druckgrafiken</h2>
+            <h3>Farbmodelle</h3>
+            <p>
+                Ein Farbmodell beschreibt den Weg, Farben als tuple von meist drei bis vier Werten zu interpretieren.
+                Die damit möglichen Farben werden als sogenannter Farbraum bezeichnet
+            </p>
+
+            <h3>RGB - Additive Farbmodelle</h3>
+            <p>
+            Bei Additiven Farbmodellen werden mehrere Primärfarben ausgesucht, welche kombiniert einen
+            möglichst großen Teil des für den Menschen sichtbaren Farbspektrums abdecken. Farben entstehen
+            hierbei durch die Umwandlung von Energie in Licht, es wird sozusagen mehr Energie zu Licht ‚addiert‘
+            -> Additive Farbmodelle. Diese Art der Farbmischung wird v.a. bei Medien, welche Licht abgeben,
+            verwendet (z.B. Bildschirme). Das populärste dieser Modelle ist das RGB-Modell. Es kann einen sehr
+            großen Teil des menschlich sichtbaren Spektrums abdecken, hat jedoch das Problem, dass die Werte
+            für Rot, Grün und Blau nicht klar definiert sind, bzw. dass kein Konsens für die Definitionen herrscht,
+            wodurch derselbe tuple auf unterschiedlichen Bildschirmen unterschiedlich aussehen kann.
+            </p>
+            
+            <h3>CMYK – Subtraktive Farbmodelle</h3>
+            <p>
+                Bei Subtraktiven Farbmodellen hingegen wird mit der spektralen Energieverteilung nach der
+                Absorption von Photonen, durch teildurchlässige Materie gerechnet. Es wird Energie absorbiert,
+                sozusagen subtrahiert -> Subtraktive Farbmodelle. Das ursprünglichste dieser Modelle war das RYB-
+                Modell, welches auch noch heute in der Malerei verwendet wird. Für den Farbdruck jedoch wurde
+                das CMY-Modell entworfen, welches später, um auch dunklere Farben zu erzeugen, den Key-Wert
+                erhielt. Bei analoger Photographie wird noch heute das CMY-Modell verwendet. Beim Druck jedoch
+                hat sich CMYK als kostengünstiger herausgestellt. CMYK steht für Cyan, Magenta, Yellow, Key
+                (Schwarz). Herkömmliche subtraktive Farbmodelle funktionieren nur auf weißem Untergrund
+            </p>
+
+            <h3>KISS - Methode</h3>
+            <p>Die KISS-Methode ist eine Methode im Design von v.a. Plakaten und steht für ‚Keep It Short and
+            Simple‘. Aufgrund von mehreren Faktoren, wie z.B. geringer Zeit für Informationsübertragung bei
+            Plakaten wurde die KISS-Methode entworfen. Sie hat die folgenden drei Hauptkonzepte:</p>
+            <ol>
+                <li>- Reduktion auf das Wesentliche</li>
+                <li>- Farbkontraste: Weniger unterschiedliche Farben; starke Konstraste</li>
+                <li>- Lesbarkeit des Textes: max. 7 Worte</li>
+            </ol>
+        </div>
+
+        <div>
+            <h2>B - Digitale Audio Workstations</h2>
+            <h3>MIDI-Protokoll</h3>
+            <p>
+            MIDI <b>“Musical Instrument Digital Interface”</b> beschreibt einen Industriestandard, der für den Austausch
+            von musikalischen Steuerinformationen zwischen elektronischen Musikinstrumenten verantwortlich ist.
+            Es wurde 1982 veröffentlicht. Damals hat es die Verwendung von Synthesizern revolutioniert, da man
+            nur bis zu 8 Töne mit einem Synthesizer abspielen konnte. Durch das MIDI-Protokoll jedoch konnten
+            nun mehrere Synthesizer verbunden werden. Das System funktioniert mithilfe von drei Bytes. Rein
+            theoretisch könnte man eine Note mit 3 Bytes abspielen, bzw. übertragen, jedoch würde diese nicht
+            mehr aufhören. Um das Abspielen der Note wieder zu stoppen, werden drei weitere Bytes benötigt.
+            Bei einem Keyboard zum Beispiel bestimmt das erste Byte, ob ein Ton beginnt oder stoppt. Das zweite
+            bestimmt die Tonhöhe und das dritte die Anschlagkraft. Ein Computer kann diese Informationen
+            üblicherweise mit drei unterschiedlichen Editoren darstellen. Am üblichsten davon ist der sogenannte
+            Piano-Roll-Editor, dieser ist im Prinzip eine Klaviertastatur mit einem Zeitverlauf. Weiters werden
+            Listeneditoren und auch Notenschriftprogramme verwendet. Diese aufgezeichneten und bei Bedarf
+            veränderten Daten können später auch wieder an ein Musikinstrument zurückgesendet werden,
+            welches die Töne wieder abspielen kann. Die Übertragungsgeschwindigkeit beträgt 31250 Bit/s, ein
+            komplettes Datenset besteht aus 30 Bits. Denn vor und nach jedem Byte wird ein Bit mitgesendet. Die
+            Ports haben 5 Pins. Pin 2 ist die Masseleitung. Es gibt drei unterschiedliche Ports, einen IN, einen OUT
+            und einen THRU. Der IN-Port empfängt Signale, der OUT-Port sendet Signale und der THRU-Port leitet
+            die Signale aus dem IN-Port direkt und unbearbeitet weiter.
+            </p>
+
+            <h3>DAW-Software</h3>
+            <p>In einer Digital Audio Workstation kann man rein digital Lieder erzeugen. Hierzu hat man die
+            Möglichkeit, viele Instrumente in das Programm einzuspielen. Über das MIDI-Protokoll ist es auch
+            möglich, elektronische Instrumente direkt mit derartigen Programmen zu verbinden. Zu den
+            populären DAW-Programmen zählen unter anderem Ableton Live und Apple Logic Pro. Zu den
+            wichtigsten und meistverwendeten Audioeffekten in DAWs gehören die folgenden</p>
+
+            <p>
+                <b>Delay:</b> Wie bei einem Echo wird ein Ton mehrmals wiederholt, bis er aufhört. Hierbei können auch
+                Effekte auf die Wiederholung gelegt werden. So kann er mithilfe von Hall z.B. immer mehr
+                verfremdet werden, bis er aufhört.
+            </p>
+
+            <p>
+                <b>Hall:</b> Hall hat eine sehr wichtige Funktion: Er sorgt dafür, dass man sich einen gewissen Raum
+                vorstellt oder eine gewisse Distanz von der Schallquelle fühlt
+            </p>
+
+            <p>
+                <b>Chorus:</b> Hierbei wird der Ton kopiert und minimal abgeändert, um so einen Effekt zu erzeugen der
+                wie ein Chor klingt. Dieser Effekt wird sehr gerne auf Gitarren bei Bass-Sequenzen eingesetzt und
+                lasst den Ton satter klingen.
+            </p>
+
+            <p>
+                <b>Gitarreneffekte</b> wie Overdrive oder Tremolo: Bei der Verzerrung (Overdrive) wird der Ton breit und
+                rau gemacht, typisch für Rock-Klassiker wie Deep Purple. Beim Tremolo Effekt wird die Amplitude
+                des Schalls zum ‚Zittern‘ gebracht. Ein Effekt der sehr gerne Bei Gitarrensolos verwendet wird.
+            </p>
+
+            <p>
+            <b>Timestretching:</b> Mithilfe von Timestretching kann man Musikstücke verlangsamen oder
+            beschleunigen, ohne die Tonhöhe zu verändern. Jedoch sollte man dies nicht um mehr als 15 bis
+            20% machen, da sonst Artefakte entstehen können.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

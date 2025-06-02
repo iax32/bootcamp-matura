@@ -42,6 +42,25 @@
             Probleme mehrere Dinge am Bildschirm auf einmal sehen.    
             </p>
 
+            <h2>A - Praxis Beispiel</h2>
+            <p>Batch Script um Inhalt in eine Datei reisnchreiben und Inhalt aus einer Datei auslesen</p>
+            <p>Code:</p>
+            <pre><code>
+ DATEI="meine_datei.txt"
+echo "Hallo, das ist ein Test." > "$DATEI"    
+cat "$DATEI"
+            </code></pre>
+
+            <pre>
+Ausgabe:
+iax1337@DESKTOP-3DT2IR9:~$ echo hi
+hi
+iax1337@DESKTOP-3DT2IR9:~$ echo "Hello World" > "test.txt"
+iax1337@DESKTOP-3DT2IR9:~$ cat "test.txt"
+Hello World
+iax1337@DESKTOP-3DT2IR9:~$
+
+            </pre>
         </div>
 
         <div>
