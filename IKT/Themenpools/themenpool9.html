@@ -42,6 +42,40 @@
             der Mathematik. So bietet es Funktionen wie math.pi, math.cos oder math.sin an. Ein weiteres Modul
             ist das Modul os, welches einige Interaktionen mit dem Betriebssystem möglich macht. Das Modul
             random bietet Funktionen an, mit denen man z.B. zufällige Zahlen finden kann.</p>
+
+            <h2>B - Praxis Beispiel</h2>
+            <p>Ein tkInter Fenster erstellen/ Taschenrechner</p>
+            <pre><code>
+import tkinter as tk
+
+#window model
+root = tk.Tk()
+root.title("calculator")
+
+#add function
+def add():
+    number1 = float(input1.get())
+    number2 = float(input2.get())
+    output_label.config(text=f"{number1 + number2}")
+
+#input fields
+input1 = tk.Entry(root)
+input1.pack()
+input2 = tk.Entry(root)
+input2.pack()
+
+
+#button - when pressed command add(function will be executed)
+button = tk.Button(root, text="add", command=add)
+button.pack()
+
+#create output label 
+output_label = tk.Label(root, text="Erbebnis: ")
+output_label.pack()
+
+
+root.mainloop()            
+</code></pre>
         </div>
 
         <div>
