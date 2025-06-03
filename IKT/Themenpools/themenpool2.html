@@ -108,6 +108,80 @@
             <pre><code>border-sizing: border-box;</code></pre>
             Für <b>alle</b> Elemente
             </p>
+
+            <h2>A - Praxis Beispiel</h2>
+            <p>Responsive Webseite erstellen</p>
+
+            <p>HTML5:</p>
+            <pre><code>
+            
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title>Seitentitel&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="responsive.css"&gt;
+      &lt;/head>&gt;
+     
+      &lt;body&gt;
+    &lt;main&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-6"&gt;
+              &lt;h1>Überschrift 1&lt;/h1&gt;
+              &lt;p>Ein Beispieltext&lt;/p&gt;
+        &lt;/div>
+            &lt;div class="col-6"&gt;
+              &lt;img src="image.jpg" alt="Beschreibung"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/main>&gt;	
+      &lt;/body&gt;
+    &lt;/html&gt;
+
+
+            </code></pre>
+
+            <p>CSS:</p>
+            <pre><code>
+* 
+{
+    box-sizing: border-box;
+}
+     
+.col-1  { width: 8.33%;   }
+.col-2  { width: 16.66%;  }
+.col-3  { width: 25%;     }
+.col-4  { width: 33.33%;  }
+.col-5  { width: 41.66%;  }
+.col-6  { width: 50%;     }
+.col-7  { width: 58.33%;  }
+.col-8  { width: 66.66%;  }
+.col-9  { width: 75%;     }
+.col-10 { width: 83.33%;  }
+.col-11 { width: 91.66%;  }
+.col-12 { width: 100%;    }
+     
+[class*="col-"] 
+{
+    float: left;
+}
+     
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+     
+@media only screen and (max-width: 768px) 
+{
+    [class*="col-"] 
+    {
+        width: 100%;
+    }
+}
+            </code></pre>
         </div>
 
         <div>
